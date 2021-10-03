@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout2</title>
+
+    <style>
+        .Container {
+            display: grid;
+            grid-gap: 7px;
+            margin: 10px 10px;
+            padding: 10px 10px;
+            grid-template-areas:
+                'header header header header header'
+                'navbar navbar navbar navbar navbar'
+                'content1 mainCont mainCont mainCont content2'
+                'footer footer footer footer footer'
+            ;
+        }
+
+        .item {
+            border: 2px solid black;
+            font-size: 25px;
+            text-align: center;
+            color: green;
+        }
+
+        #header {
+            grid-area: header;
+            height: 70px;
+            /* for adjusting text at center*/
+            line-height: 63px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+            height: 70px;
+            line-height: 63px;
+        }
+
+        #content1 {
+            grid-area: content1;
+            height: 375px;
+            line-height: 350px;
+        }
+
+        #mainCont {
+            grid-area: mainCont;
+            height: 375px;
+            line-height: 350px;
+        }
+
+        #content2 {
+            grid-area: content2;
+            height: 375px;
+            line-height: 350px;
+        }
+
+        #footer {
+            grid-area: footer;
+            height: 70px;
+            line-height: 63px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="item" id="header">Header</div>
+        <div class="item" id="navbar">Navigation Menue</div>
+        <div class="item" id="content1">Content</div>
+        <div class="item" id="mainCont">Main Content</div>
+        <div class="item" id="content2">Content</div>
+        <div class="item" id="footer">Footer</div>
+    </div>
+</body>
+
+</html>

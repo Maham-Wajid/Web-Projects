@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout using Grid</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            background-color: cadetblue;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        .item {
+            background-color: cornflowerblue;
+            border: 2px solid black;
+
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="navbar">
+            Home About US Contacts
+        </div>
+        <div class="item" id="section">Section
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores a, omnis vel itaque voluptatibus
+                voluptates! Quas distinctio consequuntur dolorem totam id, magnam odio. Adipisci at libero repellendus
+                totam cumque amet explicabo laboriosam assumenda nemo accusamus vero expedita, doloremque ratione
+                praesentium numquam laudantium consequuntur rerum aliquam veniam, sit non blanditiis magnam molestias.
+                Accusamus optio harum dolor animi molestiae ullam mollitia, quas amet debitis? Earum, dicta aliquid vero
+                hic natus tenetur aut nemo! Similique obcaecati quibusdam cum officia illo sequi esse ea veritatis odio
+                quas architecto, expedita laudantium placeat eligendi alias aliquam ducimus, reiciendis, minima a
+                possimus necessitatibus quidem odit earum? Aspernatur ab perspiciatis quisquam non modi sed quos quidem
+                dolores, numquam nulla nisi corrupti incidunt vitae dolor officia molestiae consequuntur a sit, quod
+                porro illo. Odit eos pariatur placeat, voluptas esse quia ex maiores, facilis dignissimos fugit possimus
+                consequatur odio nulla repellat rerum nostrum enim repudiandae perferendis quos voluptatum. Facere
+                beatae perferendis modi, recusandae quia corporis eaque nam molestias placeat aut corrupti sint, eos
+                velit. Ipsum dolores deleniti nemo odit modi doloremque vitae quibusdam molestiae nam accusamus ipsa
+                temporibus maxime tempora libero, veritatis porro eligendi quae voluptates quam cupiditate sint quod
+                ratione. Id distinctio deserunt porro et at error quibusdam obcaecati accusantium dignissimos suscipit
+                voluptas, sunt nobis assumenda minima saepe dicta! Ipsam quasi officiis praesentium veniam non
+                voluptates ratione provident illo ex odio dolorem, saepe delectus reprehenderit repudiandae incidunt
+                repellendus a suscipit. Saepe quas harum accusantium obcaecati facere, repellat voluptate molestias
+                reiciendis. Quidem et laborum eligendi autem ipsa totam odit cupiditate, fuga ratione nisi, iusto odio?
+                Vero repudiandae error, alias possimus beatae ab incidunt eligendi, similique totam officiis dignissimos
+                rem corporis animi, quasi perferendis pariatur mollitia accusamus quis maxime. Quos similique ullam
+                ipsa, consequuntur molestias modi. Magni nostrum saepe eligendi praesentium id eos fuga at a esse
+                ducimus voluptas commodi qui quos nam pariatur aut beatae sapiente obcaecati aperiam quibusdam autem
+                placeat, iste necessitatibus! Unde, perspiciatis ab magni nemo error molestiae aspernatur, animi
+                corporis omnis explicabo atque soluta laborum aut cumque magnam nihil illum earum quo tempore rerum.
+                Magnam asperiores incidunt voluptatem, quo assumenda sed, sit ab consectetur ullam accusamus cumque amet
+                neque dolorum? Laborum qui animi soluta quisquam aliquam iure culpa cumque enim fugit commodi, vero
+                cupiditate impedit blanditiis, et quibusdam consequuntur perferendis mollitia quo beatae ipsum, eum
+                ullam explicabo praesentium ratione. Deserunt dolore voluptate repudiandae animi esse, veritatis, sequi
+                saepe incidunt odio, aliquid possimus pariatur eos placeat quos numquam!</p>
+        </div>
+        <div class="item" id="aside">Aside
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae, voluptatum qui optio facere
+                exercitationem adipisci voluptatem veniam rerum? Laboriosam delectus dicta accusantium nisi repudiandae
+                itaque voluptatum alias molestiae quo expedita necessitatibus iusto ipsam corporis repellendus ducimus
+                sed, quidem, deleniti fugiat natus magnam fuga nulla qui fugit velit? Consequatur aspernatur, vero
+                laborum quasi numquam expedita sit illo provident, velit in ratione saepe blanditiis mollitia! Fuga eos
+                autem, voluptas, possimus eius odio quidem consectetur unde ex iure aspernatur iusto sunt veritatis
+                inventore in excepturi explicabo enim, labore debitis vitae! Obcaecati perferendis aliquam nostrum,
+                suscipit quaerat fuga quibusdam consequuntur sit omnis eum distinctio tenetur asperiores porro officiis
+                labore dolorem provident eveniet deserunt voluptatibus maiores nisi eaque ut cupiditate! Quod voluptates
+                impedit velit deserunt in labore exercitationem similique pariatur sit eligendi, laudantium, temporibus
+                facilis totam cumque voluptatem ipsa ut? Aut iure, ex officiis exercitationem, in quia expedita
+                voluptates culpa dolores tenetur asperiores, quas eaque sint inventore? Ullam soluta tempora inventore
+                amet ratione, ad saepe facere pariatur exercitationem veniam cupiditate laudantium libero nostrum! In
+                excepturi aliquid rerum tempora laboriosam ratione porro vero animi doloremque distinctio, vel error
+                repudiandae deserunt sequi, totam, cupiditate et reprehenderit voluptatibus optio? Officiis iste
+                voluptatem natus asperiores enim delectus ea.</p>
+        </div>
+        <div class="item" id="footer">Footer
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore molestias corrupti reiciendis alias!
+                Eligendi praesentium architecto quae perferendis incidunt consequatur!</p>
+        </div>
+    </div>
+</body>
+
+</html>
