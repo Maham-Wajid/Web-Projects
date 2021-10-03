@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('Bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 33%;
+    height: 100px;
+}
+
+.logo img{
+    width: 50%;
+    height: 170px;
+}
+
+.menue{
+    width: 44%;
+    height: 100px;
+}
+
+.menue ul{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.menue ul li{
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 15px; 
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.menue ul li:hover{
+    background: linear-gradient(70deg,#f0c4e3,#a88beb);
+    border-radius: 10px;
+}
+
+.menue ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+}
+
+.btn1{
+    width: 33%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.btn1 button{
+    background: linear-gradient(70deg,#f0c4e3,#a88beb);
+    padding: 8px 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: purple;
+    margin-left: 140px;
+    font-weight: bold;
+}
+
+.btn1 button:hover{
+    background: linear-gradient(70deg,#a88beb,#f0c4e3);
+    color: white;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftSide{
+    width: 50%;
+    height: auto;
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+span{
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+p{
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.rightSide{
+    width: 50%;
+    height: auto;
+}
+
+.rightSide img{
+    width: 600px;
+    height: 500px;
+    display: inline-block;
+}
+
+.leftSide button{
+    background: linear-gradient(70deg,#f0c4e3,#a88beb);
+    padding: 8px 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: purple;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.leftSide button:hover{
+    background: linear-gradient(70deg,#a88beb,#f0c4e3);
+}
