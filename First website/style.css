@@ -1,0 +1,417 @@
+/*
+==============
+GLOBAL STYLES
+==============
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Lobster Two', cursive;
+	background-image: url(img/photo1.png);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.h1tag{
+	font-size: 3em;
+}
+
+.h3tag{
+	font-size: 2.3em;
+}
+
+h5{
+	font-size: 1.5em;
+}
+
+
+
+/*
+============
+HERO'S STYLE
+============
+*/
+
+.hero{
+	display: flex;
+	color: skyblue;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.box{
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
+.menu{
+	height: 100px;
+	width: 100%;
+	background-color: #0004;
+	line-height: 80px;
+}
+
+.menu ul{
+	padding-top: 10px;
+	text-align: center;
+}
+
+.menu ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+.menu ul li:hover{
+	transition: 0.3s all;
+	background-color: skyblue;
+}
+
+.menu ul li a{
+	color: white;
+	text-decoration: none;
+	padding: 0px 15px 0px 15px;
+}
+
+/*
+================
+Services Section
+================
+*/
+
+.line{
+	background: rgba(50,30,0,20);
+	height: 50px;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.services{
+	width: 100%;
+	color: rgba(50,30,0,20);
+	padding-top: 120px;
+	text-align: center;
+	background: linear-gradient(to right bottom,skyblue,silver,grey);
+}
+
+.services-content{
+	color: purple;
+	text-align: left;
+}
+
+.list{
+	font-size: 1.25em;
+	color: black;
+	text-align: left;
+}
+
+
+/*
+================
+ABOUT US Section
+================
+*/
+
+h1{
+	font-size: 2.5em;
+}
+
+.line{
+	height: 50px;
+	width: 100%;
+	background: rgba(50,30,0,20);
+	opacity: 0.9;
+}
+
+
+.about_us{
+	padding-top: 100px;
+	padding-bottom: 120px;
+	text-align: center;
+	background-image: url(img/photo2.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+.aboutUs_content{
+	width: 80%;
+	margin: auto;
+	font-size: 1.2em;
+	margin-top: 30px;
+	background-color: rgba(0,0,0,0.01);
+}
+
+.about-btn{
+	color: white;
+	margin-top: 30px;
+	padding: 10px 15px 10px 15px;
+	background-color: rgba(0,0,0,0.01);
+	cursor: pointer;
+}
+
+
+/*
+============
+TEAM Section
+============
+*/
+
+h3{
+	font-size: 1.5em;
+}
+
+.team{
+	width: 100%;
+	padding-top: 150px;
+	padding-bottom: 300px;
+	background: linear-gradient(to right bottom,silver,grey,black);
+	text-align: center;
+}
+
+.team-wrapper{
+	width: 90%;
+	padding-top: 50px;
+	margin: auto;
+}
+
+.col-team{
+	width: 33.3%;
+	float: left;
+	padding: 10px 30px 10px 30px;
+}
+
+.col-team img{
+	width: 200px; 
+	height: 170px;
+	max-width: 200px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.col{
+	max-width: 200px;
+	max-height: 170px;
+	border: 1px solid rgba(0,0,0,0.05); 
+	box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.05)
+}
+
+.team-wrapper{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+/*
+===============
+CONTACT Section
+===============
+*/
+
+
+.contact{
+	width: 100%;
+	text-align: center;
+	padding: 30px 5px 30px 5px;
+	background: linear-gradient(to right bottom, purple,white,purple);
+}
+
+.c-col{
+	width: 33.3%;
+	float: left;
+}
+
+.c-col h3{
+	display: inline-block;
+}
+
+.contact::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+/*
+====================
+CONTACT-MAIN Section
+====================
+*/
+
+.ct-h3{
+	font-size: 2em;
+}
+
+.contact-info{
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding: 30px 5px 30px 5px;
+
+}
+
+.contact-info::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.contact-info-col1{
+	width: 35%;
+	float: left;
+}
+
+.contact-info-col2{
+	width: 65%;
+	float: left;
+	text-align: left;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.Social-icon{
+	padding: 15px;
+	border: 1px solid black;
+}
+
+.fb{
+	background: #3a589b;
+	color: #fff;
+}
+
+.gp{
+	background: #d6492f;
+	color: #fff;
+}
+
+.tw{
+	background: #32ccfe;
+	color: #fff;
+}
+
+.ln{
+	background: #007bb6;
+	color: #fff;
+}
+
+
+/*
+==================
+FORM-STYLE Section
+==================
+*/
+
+.form-col{
+	float: left;
+	width: 48%;
+	margin-right: 2%;
+}
+
+.fname,.femail{
+	width: 100%;
+	height: 35px;
+	color: white;
+	padding: 0px 5px 0px 5px;
+	border: none
+	outline: none;
+	background-color: rgba(0,0,30,0.3);
+}
+
+.msg{
+	color: white;
+	width: 98%;
+	height: 250px;
+	border: none
+	outline: none;
+	background-color: rgba(0,0,30,0.3);
+}
+
+.btn{
+	color: white;
+	background-color: rgba(0,0,0,0.01);
+	margin-top: 10px;
+	padding: 10px 20px 10px 20px;
+	background: transparent;
+	color: blue;
+}
+
+
+/*
+==============
+FOOTER Section
+==============
+*/
+
+.ftr{
+	width: 100%;
+	color: white;
+	background-color: black;
+}
+
+.ftr::after{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.ftr h1{
+	margin-bottom:30px;
+}
+
+.ftr-col{
+	float: left;
+	width: 33.33%;
+	padding: 15px 10px 15px 10px;
+}
+
+
+/*
+=================
+CSS MEDIA QUERIES
+=================
+*/
+
+@media screen and (max-width: 500px){
+	.col-team{
+		width: 100%;
+		padding-top: 100px;
+	}
+
+	.c-col{
+		width: 100%;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+
+	.contact-info-col1{
+		width: 100%;
+	}
+
+	.contact-info-col2{
+		width: 100%;
+		padding-top: 80px;
+	}
+
+	.form-col{
+		width: 100%;
+	}
+
+	.ftr-col{
+		width: 100%;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+}
+
+/*==========END==========*/
