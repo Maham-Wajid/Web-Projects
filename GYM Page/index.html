@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <title>GYM Website</title>
+    <style>
+        /* CSS Reset*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('3.jpg');
+            color: white;
+            font-family: 'Lobster Two', cursive;
+            
+        }
+
+        .box {
+            position: sticky;
+            background-color: rgb(41 185 172 / 10%);
+            margin-top: -20px;
+            padding: 2px;
+        }
+
+        .left {
+            /* border: 2px solid rgb(156, 95, 95); */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 23px;
+        }
+
+        .left img {
+            width: 70px;
+        }
+
+        .left div {
+            line-height: 12px;
+            font-size: 20px;
+            text-align: center;
+            padding: 0px;
+        }
+
+        .mid {
+            /* border: 2px solid rgb(216, 141, 141); */
+            display: block;
+            margin: 25px auto;
+            width: 40%;
+        }
+
+        .right {
+            /* border: 2px solid rgb(146, 50, 50); */
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 28px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 23px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a.active {
+            text-decoration: underline;
+            color: #77ead0;
+        }
+
+        .navbar li a:hover {
+            color: rgb(198, 232, 235);
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 5px 10px;
+            padding: 15px 15px;
+            font-size: 17px;
+            background-color: black;
+            color: white;
+            border: 2px solid silver;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Lobster Two', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(198, 232, 235);
+            color: rgb(11, 114, 211);
+            font-weight: bold;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 76px 90px;
+            padding: 75px;
+            width: 33%;
+            display: block;
+            border-radius: 20px;
+
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 280px;
+            padding: 3px;
+            border: 2px solid white;
+            margin: 10px auto;
+            border-radius: 15px;
+            font-size: 20px;
+            font-family: 'Lobster Two', cursive;
+        }
+
+        .container .btn {
+            display: block;
+            margin: 30px auto;
+            width: 130px;
+        }
+
+        .container .btn:hover {
+            color: rgb(11, 114, 211);
+            background-color: rgb(198, 232, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <header class="header">
+
+            <!-- Left div for logo -->
+            <div class="left">
+                <img src="img/Logo.png" alt="Logo">
+                <div>Fitness GYM</div>
+            </div>
+
+            <!-- Mid div for navbar -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Right div for buttons -->
+            <div class="right">
+                <button class="btn">Call Us now</button>
+                <button class="btn">Email Us</button>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <h1>Join the Best GYM</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Locality">
+            </div>
+
+            <button class="btn"> Submit </button>
+        </form>
+    </div>
+</body>
+
+</html>
