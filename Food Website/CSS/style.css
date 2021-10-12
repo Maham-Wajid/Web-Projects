@@ -1,0 +1,255 @@
+/* CSS RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster Two', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%; 
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+
+#logo{
+margin: 5px 30px;
+}
+
+#logo img{
+    width: 70px;
+    margin: 1px 5px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 0px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    padding: 5px 25px;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 594px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 680px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* Home Section tags */
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    font-size: 1.3rem;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+/* Services Section */
+
+#services-container h1{
+    padding-top: 15px;
+}
+
+#services{
+    margin: 30px;
+    margin-top: 10px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 10px 20px;
+    margin: 15px 15px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    background-color: rgb(243, 243, 243);
+}
+
+#services .box img{
+    height: 170px;
+    display: block;     /* Display block is necessary for margin auto */
+    margin: auto;
+}
+
+/* Client Section */
+
+#client-section{
+    position: relative;
+    /* height: 310px; */
+}
+
+#client-section h1{
+    padding-top: 20px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../bg.jpg)  no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 10px 25px;
+    margin: 30px 30px;
+}
+
+#client .client-item img{
+    height: 130px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+    margin: 15px 0px;
+    /* height: 350px; */
+}
+
+#contact h1{
+    padding-top: 20px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../contact.jpg)  no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.contact-box{
+    display: flex;
+    margin: 0px 110px;
+    font-size: 25px;
+}
+
+.contact-box input,.contact-box textarea{
+    margin: 7px 50px;
+    padding: 12px 0px;
+    width: 80%;
+    border: 2px solid rgb(175, 167, 167);
+    border-radius: 25px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+/* Footer */
+footer{
+    background-color: #3e3c3c;
+    color: white;
+    padding: 20px 10px;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 3rem;
+    /* padding: 3px; */
+    /* padding-top: 20px; */
+}
+
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 3px;
+}
+
+.btn{
+    padding: 10px 25px;
+    border: 2px solid white;
+    background-color: tomato;
+    border-radius: 25px;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: yellowgreen;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-color: white;
+    font-size: 22px;
+}
+
+.center{
+    text-align: center;
+}
